@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/116473793d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Página Contacto</title>
+</head>
+
+<body id="contactbody">
+    <!--Fila logo y nav-->
+    <header class="header2">
+        <nav class="navbar flex-row container">
+            <a class="navbar__brand" href="../../index.html"> <img src="../image/LogoPalmeraAzul.png" alt=""></a>
+            <ul class="navbar__menu flex-row">
+                <li class="navbar__item"><a class="navbar__link" href="../../index.html">INICIO</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="servicio.html">SERVICIO</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="actividades.html">ACTIVIDADES</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="galeria.html">GALERIA</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Cierre fila logo y nav-->
+    <!--Información del sitio-->
+    <main>
+        <h2>CONTACTO</h2>
+        <div class="box container flex-row">
+            <form action="" method="GET">
+                <fieldset>
+                    <legend><b>Formulario de cliente</b>
+                    </legend>
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" name="name" id="name" class="inputuser" required />
+                        <label for="name" class="labelinput">Nombre completo</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="email" name="email" id="email" class="inputuser" required />
+                        <label for="email" class="labelinput">Email</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="tel" name="telephon" id="telephon" class="inputuser" required />
+                        <label for="telephon" class="labelinput">Teléfono</label>
+                    </div>
+                    <br><br>
+                    <p>Sexo</p>
+                    <input type="radio" name="genero" id=femenino value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" name="genero" id=masculino value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id=otro value="otro">
+                    <label for="otro">Otro</label>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="date"><b>Fecha de Nacimiento:</b></label>
+                        <input type="date" name="date" id="date" required />
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" name="addres" id="addres" class="inputuser" required />
+                        <label for="addres" class="labelinput">Dirección</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" name="state" id="state" class="inputuser" required />
+                        <label for="state" class="labelinput">Estado</label>
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" name="country" id="country" class="inputuser" required />
+                        <label for="country" class="labelinput">País</label>
+                    </div>
+                    <br>
+                    <textarea name="comments" id="comments" cols="30" rows="2" class="inputuser"></textarea>
+                    <label for="comments">Comentarios</label>
+                    <br><br>
+                    <div class="button">
+                        <input type="submit" name="submit" class="submit" value="Enviar">
+                        <input type="reset" name="reset" class="submit" value="Limpiar">
+                        <input type="button" name="button" class="submit" value="Ayuda">
+                    </div>
+                </fieldset>
+            </form>
+            <picture class="mapscontainer">
+                <iframe class="maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113143.48993314368!2d-48.63072940394381!3d-27.60177342253491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952738248efc5a5b%3A0x25bd9c99b58228da!2sCentro%2C%20Florian%C3%B3polis%20-%20Santa%20Catarina!5e0!3m2!1ses-419!2sbr!4v1646693585733!5m2!1ses-419!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </picture>
+
+    </main>
+    <!--Cierre información del sitio-->
+    <!--Inicio pie-->
+    <footer>
+        <section class="sectionfoo container flex-row">
+            <div class="footer__1">
+                <h3 class="footer__information">Todos los derechos reservados&copy; 2022</h3>
+            </div>
+            <div class="footer__2 flex-row">
+                <h3 class="footer__RRSS"><i class="fa-brands fa-facebook-square"></i></h3>
+                <h3 class="footer__RRSS"><i class="fa-brands fa-instagram-square"></i></h3>
+                <h3 class="footer__RRSS"><i class="fa-brands fa-twitter-square"></i></h3>
+            </div>
+        </section>
+    </footer>
+    <!--Cierre pie-->
+</body>
+
+</html>
