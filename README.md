@@ -2,4 +2,4 @@
 
 ## Código fuente de CopoFloripa
 
-### Ver ⚡️ [Demo] (https://fermazz.github.io/CopoFloripa.MazzuccoFernando/) del sitio
+### Ver ⚡️ [Demo](https://fermazz.github.io/CopoFloripa.MazzuccoFernando/) del sitio
