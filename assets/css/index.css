@@ -197,6 +197,18 @@ main .aboutus {
     }
 }
 
+.navbar__brand .navbar__brand--img {animation: rotationLogo 5s ease }
+
+@keyframes rotationLogo {
+    14.29% {transform: rotate(-40deg);}
+    28.57% {transform: rotate(-20deg);}
+    42.86% {transform: rotate(0deg);}
+    57.16% {transform: rotate(20deg);}
+    71.44% {transform: rotate(40deg);}
+    85.74% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+    }
+
 
 /* Estilos del footer */
 
@@ -477,7 +489,7 @@ legend {
     cursor: pointer;
     border-radius: 5px;
     width: 25%;
-}
+    }
 
 .submit:hover {
     background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
