@@ -197,17 +197,80 @@ main .aboutus {
     }
 }
 
-.navbar__brand .navbar__brand--img {animation: rotationLogo 5s ease }
+.navbar__brand .navbar__brand--img {
+    animation: rotationLogo 5s ease
+}
 
 @keyframes rotationLogo {
-    14.29% {transform: rotate(-40deg);}
-    28.57% {transform: rotate(-20deg);}
-    42.86% {transform: rotate(0deg);}
-    57.16% {transform: rotate(20deg);}
-    71.44% {transform: rotate(40deg);}
-    85.74% {transform: rotate(20deg);}
-    100% {transform: rotate(0deg);}
+    14.29% {
+        transform: rotate(-40deg);
     }
+
+    28.57% {
+        transform: rotate(-20deg);
+    }
+
+    42.86% {
+        transform: rotate(0deg);
+    }
+
+    57.16% {
+        transform: rotate(20deg);
+    }
+
+    71.44% {
+        transform: rotate(40deg);
+    }
+
+    85.74% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Normalización Bootstrap index */
+/* card-group */
+
+.aboutus__information {
+    color: var(--principal);
+    font: var(--font-primary)
+}
+
+.aboutus__tittle {
+    color: var(--principal);
+    font: var(--font-primary);
+    font-size: 2em;
+}
+
+.card-body {
+    font-size: 2em;
+    text-align: justify;
+    color: var(--principal);
+    font-family: var(--font-primary);
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: var(--principal);
+    font-weight: bold;
+}
+
 
 
 /* Estilos del footer */
@@ -230,7 +293,6 @@ footer .sectionfoo {
 .sectionfoo .footer__2 {
     flex-basis: 50%;
     gap: 5rem;
-    flex-direction: row-reverse;
 }
 
 .footer__1 .footer__information {
@@ -293,14 +355,29 @@ h2 {
     padding: 1rem;
 }
 
+.buggy {
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 768px) {
     .Services__div {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         max-width: 100%;
         padding: 0 5px;
     }
 
+}
+
+/* Normalización Bootstrap Actividades */
+/*Button*/
+
+.btn-outline-secondary {
+    font-family: var(--font-primary);
+}
+
+.sv__text {
+    margin-bottom: 0;
 }
 
 /*Estilos de Servicio*/
@@ -351,8 +428,31 @@ h2 {
     .information__sv {
         text-align: justify;
     }
+}
 
+/* Normalización Bootstrap Servicio */
+/*Carousel*/
 
+.carousel {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-family: var(--font-secundary);
+    color: var(--principal);
+    font-weight: bold;
+}
+
+h4 {
+    font-family: var(--font-primary);
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.information__sv {
+    font-family: var(--font-primary);
+    color: var(--principal);
 }
 
 /*Estilos de Galeria*/
@@ -423,6 +523,19 @@ h2 {
     }
 }
 
+/* Normalización Bootstrap Galeria */
+/*Sombra*/
+
+.container__tittle {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.container__tittle {
+    align-items: flex-end;
+}
+
 /*Estilos de Contacto*/
 
 #contactbody {
@@ -489,7 +602,7 @@ legend {
     cursor: pointer;
     border-radius: 5px;
     width: 25%;
-    }
+}
 
 .submit:hover {
     background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
@@ -499,8 +612,15 @@ legend {
     max-width: 100%;
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+}
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 675px) {
     .box {
         flex-direction: column;
     }
@@ -513,4 +633,23 @@ legend {
         border-radius: 15px;
         width: 100%;
     }
+}
+
+/* Normalización Bootstrap Contacto */
+/*Grid & button*/
+
+@media screen and (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+.btn-outline-info {
+    font-family: var(--font-primary);
+}
+
+.buttonboots {
+    display: flex;
+    justify-content: end;
 }
