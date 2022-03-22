@@ -30,11 +30,12 @@ html {
 
 ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 a {
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 1rem;
     font-weight: bold;
 }
@@ -58,15 +59,71 @@ a {
 
 /* Navbar index */
 
+.navbar__menu .navbar__item {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 3s ease;
+}
+
+#borderwhit {
+    color: var(--secondary);
+}
+
 .navbar__item .navbar__link1 {
     color: var(--secondary);
 }
+
+.navbar__menu .navbar__item:hover {
+    display: block;
+    border-color: inherit;
+}
+
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.navbar .navbar__menu .navbar__item:hover .submenu {
+    display: block;
+    border-color: inherit;
+}
+
+.submenu .submenu__item .submenu__link1 {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: var(--secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+}
+
+.submenu .submenu__item .submenu__link1:hover {
+    border-color: inherit;
+
+}
+
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu .submenu__item .submenu__link {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: var(--principal);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+}
+
+.submenu .submenu__item .submenu__link:hover {
+    border-color: inherit;
+
+}
+
 
 /* Navbar otras */
 
 .navbar__link {
     color: var(--principal);
-    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -93,6 +150,8 @@ header .navbar__brand {
 header .navbar__menu {
     flex-basis: 40%;
     justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
 }
 
 .navbar__brand img {
@@ -113,17 +172,24 @@ h1 {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    img {
-        max-width: 100%;
-    }
+@media screen and (max-width: 576px) {
 
     .navbar__item .navbar__link {
         font-size: 90%;
     }
 
+    .navbar__menu .navbar__item .navbar__link1 {
+        font-size: 90%;
+    }
+
+    .navbar__menu .navbar__item {
+        justify-content: center;
+    }
 }
 
+a:hover {
+    color: inherit;
+}
 
 /* Style main index */
 
@@ -131,8 +197,20 @@ h1 {
     background-image: url(../image/Playa\ horizontal.jpg);
     overflow: hidden;
     height: 100vh;
-    background-size: cover;
+    background-size: 100%;
     background-position: top;
+    animation: movimiento 10s infinite linear alternate;
+    width: 100%
+}
+
+@keyframes movimiento {
+    from {
+        background-position: top;
+    }
+
+    to {
+        background-position: bottom;
+    }
 }
 
 main .aboutus {
@@ -166,12 +244,16 @@ main .aboutus {
         flex-direction: column;
         font-size: 80%;
     }
+
+    .back {
+        height: 550px;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .navbar__item .navbar__link1 {
-        font-size: 90%;
+        font-size: 1.5em;
     }
 
     .tittle__empresa {
@@ -182,8 +264,9 @@ main .aboutus {
 
 
     .aboutus {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+
     }
 
     .aboutus__tittle {
@@ -192,13 +275,49 @@ main .aboutus {
     }
 
     .aboutus__2 .aboutus__information {
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: justify;
     }
 }
 
+@media screen and (max-width: 576px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 400%;
+        animation: movimiento 15s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 250%;
+        animation: movimiento 16s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 180%;
+        animation: movimiento 14s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1290px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        animation: movimiento 12s infinite linear alternate;
+    }
+}
+
 .navbar__brand .navbar__brand--img {
-    animation: rotationLogo 5s ease
+    animation: rotationLogo 15s ease infinite alternate
 }
 
 @keyframes rotationLogo {
@@ -406,6 +525,12 @@ h2 {
 
 .section__serv {
     gap: 2rem;
+}
+
+.img-relax {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
 }
 
 @media screen and (max-width: 768px) {
@@ -616,9 +741,6 @@ legend {
     display: flex;
     justify-content: center;
 }
-
-
-
 
 @media screen and (max-width: 675px) {
     .box {

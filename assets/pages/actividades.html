@@ -16,33 +16,22 @@
     <!--Fila logo y nav-->
     <header class="header2">
         <nav class="navbar flex-row container">
-            <a class="navbar__brand" href="../../index.html"> <img src="../image/LogoPalmeraAzul.png" alt=""></a>
+            <a class="navbar__brand" href="../../index.html"> <img src="../image/LogoPalmeraAzul.png" alt="Logo de la empresa CopoFloripa con nombre"></a>
             <ul class="navbar__menu flex-row">
+                <li class="navbar__item"><a class="navbar__link" href="../../index.html">INICIO</a></li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../index.html">INICIO</a>
+                    <a class="navbar__link" href="servicio.html">SERVICIO</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="actividades.html">ACTIVIDADES</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="actividades.html#act-surf" class="submenu__link">Surf</a></li>
+                        <br>
+                        <li class="submenu__item"><a href="actividades.html#act-snorkel" class="submenu__link">Snorkel</a></li>
+                        <br>
+                        <li class="submenu__item"><a href="actividades.html#act-buggy" class="submenu__link">Buggy</a></li>
+                        </ul>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="servicio.html">SERVICIO</a>
-                    <!--<ul class="submenu">
-                        <li class="submenu__item"><a href="" class="submenu__link">Clases de Surf</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Clases de Snorkel</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Buggy</a></li>
-                    </ul>-->
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="actividades.html">ACTIVIDADES</a>
-                    <!--<ul class="submenu">
-                        <li class="submenu__item"><a href="" class="sumenu__link"></a></li>
-                        <li class="submenu__item"><a href="" class="sumenu__link"></a></li>
-                        <li class="submenu__item"><a href="" class="sumenu__link"></a></li>
-                    </ul>-->
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="galeria.html">GALERIA</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="contacto.html">CONTACTO</a>
-                </li>
+                <li class="navbar__item"><a class="navbar__link" href="galeria.html">GALERIA</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -54,8 +43,8 @@
             <picture class="Services__picture">
                 <img class="Svimg1" src="../image/Escuela de surf.jpg" alt="Escuela de surf">
             </picture>
-            <div class="sv__div ">
-                <h4 class="sv__tittle">Escuela de Surf</h4>
+            <div class="sv__div" id="act-surf">
+                <h4 class="sv__tittle" >Escuela de Surf</h4>
                 <p class="sv__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     excepturi
                     perspiciatis fugit explicabo
@@ -70,8 +59,8 @@
         </div>
 
         <div class="Services__div flex-row">
-            <div class="sv__div">
-                <h4 class="sv__tittle">Escuela de Snorkel</h4>
+            <div class="sv__div" id="act-snorkel">
+                <h4 class="sv__tittle" >Escuela de Snorkel</h4>
                 <p class="sv__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     excepturi
                     perspiciatis fugit explicabo
@@ -90,8 +79,8 @@
             <picture class="Services__picture">
                 <img class="Svimg2" src="../image/Buggy.jpg" alt="Buggy">
             </picture>
-            <div class="sv__div">
-                <h4 class="sv__tittle">Buggy</h4>
+            <div class="sv__div" id="act-buggy">
+                <h4 class="sv__tittle" >Buggy</h4>
                 <p class="sv__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     excepturi
                     perspiciatis fugit explicabo
@@ -109,7 +98,7 @@
     <footer>
         <section class="sectionfoo container flex-row">
             <div class="footer__1">
-                <h3 class="footer__information">Todos los derechos reservados&copy; 2022</h3>
+                <h3 class="footer__information">Derechos reservados FerMazz&copy; 2022</h3>
             </div>
             <div class="footer__2 flex-row">
                 <h3 class="footer__RRSS"><i class="fa-brands fa-facebook-square"></i></h3>
