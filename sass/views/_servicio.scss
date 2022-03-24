@@ -1,0 +1,78 @@
+/*Estilos de Servicio*/
+
+.tittlesv {
+    grid-area: tittlesv;
+}
+
+.picture1 {
+    max-width: 1500px;
+    margin: 0 auto;
+    &__img {
+        max-width: 100%;
+        margin-bottom: 2rem
+    }
+}
+
+.section__serv {
+    gap: 2rem;
+    .title__sv {
+        font-size: 2em;
+    }
+    .information__sv {
+        font-size: 2em;
+    }
+}
+
+.img-relax {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+@media screen and (max-width: 768px) {
+    .picture1__img {
+        max-width: 100%;
+    }
+
+    .mainserv {
+        padding: 5px;
+    }
+
+    .title__sv {
+        text-align: center;
+    }
+
+    .information__sv {
+        text-align: justify;
+    }
+}
+
+/* Normalización Bootstrap Servicio */
+/*Carousel*/
+
+.carousel {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-family: $font-secundary;
+    color: $principal;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    padding: 1rem;
+}
+
+h4 {
+    font-family: $font-primary;
+    color: $principal;
+    font-weight: bold;
+}
+
+.information__sv {
+    font-family: $font-primary;
+    color: $principal;
+}
+
+

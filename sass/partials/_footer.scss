@@ -1,0 +1,41 @@
+/* Footer */
+
+footer {
+    background-color: rgb(165, 183, 243);
+
+    .sectionfoo {
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        .footer__1 {
+            flex-basis: 50%;
+
+            .footer__information {
+                font-family: $font-primary;
+                font-size: 1.8em bold;
+                padding: 1rem;
+                align-items: center;
+            }
+        }
+
+        .footer__2 {
+            flex-basis: 20%;
+            gap: 5rem;
+            justify-content: end;
+
+            .footer__RRSS {
+                font-size: 1.8em;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+h3 {
+    margin-bottom: 0;
+    font-family: $font-primary;
+    color: $principal;
+    font-weight: bold;
+}

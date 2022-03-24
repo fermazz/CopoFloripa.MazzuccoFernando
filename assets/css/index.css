@@ -9,8 +9,7 @@
     --secondary: #fff;
     --font-primary: 'Titillium Web', sans-serif;
     --font-secundary: 'Merienda', cursive;
-    --text-large: ;
-}
+    }
 
 /*  Normalize */
 *,
@@ -377,20 +376,6 @@ main .aboutus {
     font-size: 1em;
 }
 
-.footer__2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-h3 {
-    margin-bottom: 0;
-    font-family: var(--font-primary);
-    color: var(--principal);
-    font-weight: bold;
-}
-
-
 
 /* Estilos del footer */
 
@@ -410,8 +395,9 @@ footer .sectionfoo {
 }
 
 .sectionfoo .footer__2 {
-    flex-basis: 50%;
+    flex-basis: 20%;
     gap: 5rem;
+    justify-content: end;
 }
 
 .footer__1 .footer__information {
@@ -427,6 +413,12 @@ footer .sectionfoo {
     padding: 1rem;
 }
 
+h3 {
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: var(--principal);
+    font-weight: bold;
+}
 
 /*Estilos de Actividades (tiene clases llamadas servicios)*/
 
@@ -775,3 +767,4 @@ legend {
     display: flex;
     justify-content: end;
 }
+

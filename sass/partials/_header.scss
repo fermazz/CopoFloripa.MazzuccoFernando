@@ -1,0 +1,83 @@
+/* ...Header & Navbar... */
+
+.navbar__menu .navbar__item {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 3s ease;
+
+    &:hover {
+        display: block;
+        border-color: inherit;
+    }
+
+    &:hover .submenu {
+        display: block;
+        border-color: inherit;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+    }
+
+}
+
+.submenu .submenu__item .submenu__link {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: $principal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+
+    &:hover {
+        border-color: inherit;
+    }
+}
+
+.navbar__link {
+    color: $principal;
+    font-weight: bold;
+}
+
+.header2 {
+    background-color: rgb(165, 183, 243);
+
+    .navbar {
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        .navbar__brand {
+            flex-basis: 30%;
+
+            img {
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .navbar__menu {
+            flex-basis: 40%;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .navbar__item .navbar__link {
+        font-size: 90%;
+    }
+
+    .navbar__menu .navbar__item {
+        justify-content: center;
+    }
+}
+
+a:hover {
+    color: inherit;
+}
