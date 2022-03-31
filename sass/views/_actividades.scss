@@ -1,0 +1,69 @@
+/*Estilos de Actividades (tiene clases llamadas servicios)*/
+
+.body__act {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.mainservices {
+    display: grid;
+    grid-template-rows: 8vh 1fr 1fr;
+    min-height: 100vh;
+    gap: 2rem;
+    flex-basis: 50%;
+}
+
+.Services__picture {
+    flex-basis: 60%;
+
+    .Svimg1 {
+        max-width: 100%;
+    }
+
+    .Svimg2 {
+        max-width: 75%;
+    }
+}
+
+.Services__div {
+    gap: 2rem;
+
+    .sv__div {
+        flex-basis: 40%;
+        font-size: 2em;
+        @include flex(column, center)
+    }
+}
+
+h2 {
+    font-family: $font-secundary;
+    font-size: 3em;
+    text-align: center;
+    padding: 1rem;
+}
+
+.buggy {
+    @extend .Services__div;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Services__div {
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+}
+
+/* Normalización Bootstrap Actividades */
+/*Button*/
+
+.btn-outline-secondary {
+    font-family: $font-primary;
+}
+
+.sv__text {
+    margin-bottom: 0;
+}

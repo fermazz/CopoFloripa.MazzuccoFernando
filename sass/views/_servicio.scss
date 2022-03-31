@@ -9,17 +9,17 @@
     margin: 0 auto;
     &__img {
         max-width: 100%;
-        margin-bottom: 2rem
+        margin-bottom: map-get($size, medium)
     }
 }
 
 .section__serv {
     gap: 2rem;
     .title__sv {
-        font-size: 2em;
+        font-size: map-get($size, medium);
     }
     .information__sv {
-        font-size: 2em;
+        font-size: map-get($size, medium);
     }
 }
 

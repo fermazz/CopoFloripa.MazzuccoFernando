@@ -5,3 +5,14 @@ $secondary: #fff;
 $font-primary: 'Titillium Web', sans-serif;
 $font-secundary: 'Merienda', cursive;
 
+$size: ( 
+    large: 3rem,
+    medium: 2rem,
+    small: 1rem
+);
+@each $var, $val in $size {
+    .size-#{$var} {
+        font-size: #{$val};
+}
+}
+

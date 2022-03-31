@@ -422,7 +422,7 @@ h3 {
 
 /*Estilos de Actividades (tiene clases llamadas servicios)*/
 
-body {
+.body__act {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
