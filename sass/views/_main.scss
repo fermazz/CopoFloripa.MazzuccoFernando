@@ -1,0 +1,159 @@
+/* Style main index */
+
+.back {
+    background-image: url(../../assets/image/Playahorizontal.jpg);
+    overflow: hidden;
+    height: 100vh;
+    background-size: 100%;
+    background-position: top;
+    animation: movimiento 10s infinite linear alternate;
+    width: 100%
+}
+
+@keyframes movimiento {
+    from {
+        background-position: top;
+    }
+
+    to {
+        background-position: bottom;
+    }
+}
+
+main .aboutus {
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    align-items: center;
+    &__1 {
+        flex-basis: 20%;
+        font-weight: bold;
+    }
+    &__2 {
+        flex-basis: 80%;
+    }
+    &__tittle {
+        font-size: 2em;
+    }
+}
+
+
+.aboutus__2 .aboutus__information {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+    .tittle__empresa {
+        display: flex;
+        flex-direction: column;
+        font-size: 80%;
+    }
+
+    .back {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar__item .navbar__link1 {
+        font-size: 1.5em;
+    }
+
+    .tittle__empresa {
+        display: flex;
+        flex-direction: column;
+        font-size: 50%;
+    }
+
+
+    .aboutus {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+
+    .aboutus__tittle {
+        font-size: 1.5em;
+        text-align: justify;
+    }
+
+    .aboutus__2 .aboutus__information {
+        font-size: 2em;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 400%;
+        animation: movimiento 15s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 250%;
+        animation: movimiento 16s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 180%;
+        animation: movimiento 14s infinite linear alternate;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1290px) {
+    .back {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        animation: movimiento 12s infinite linear alternate;
+    }
+}
+
+.navbar__brand .navbar__brand--img {
+    animation: rotationLogo 5s ease infinite
+}
+
+@keyframes rotationLogo { 
+    100% { 
+        -webkit-transform: rotateY(360deg); 
+        transform:rotateY(360deg); 
+    } 
+}
+
+
+.aboutus__information {
+    color: $principal;
+    font: $font-primary
+}
+
+.aboutus__tittle {
+    color: $principal;
+    font: $font-primary;
+    font-size: 2em;
+}
+
+.card-body {
+    font-size: 2em;
+    text-align: justify;
+    color: $principal;
+    font-family: $font-primary;
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+

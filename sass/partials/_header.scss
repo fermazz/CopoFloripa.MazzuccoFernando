@@ -1,5 +1,7 @@
 /* ...Header & Navbar... */
 
+/* Navbar index */
+
 .navbar__menu .navbar__item {
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0);
@@ -10,16 +12,41 @@
         border-color: inherit;
     }
 
-    &:hover .submenu {
-        display: block;
+}
+
+#borderwhit {
+    color: $secondary;
+}
+
+.navbar__item .navbar__link1 {
+    color: $secondary;
+}
+
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.navbar .navbar__menu .navbar__item:hover .submenu {
+    display: block;
+    border-color: inherit;
+}
+
+.submenu .submenu__item .submenu__link1 {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: var(--secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+
+    &:hover {
         border-color: inherit;
     }
+}
 
-    .submenu {
-        display: none;
-        position: absolute;
-    }
-
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
 }
 
 .submenu .submenu__item .submenu__link {
@@ -34,6 +61,12 @@
     }
 }
 
+#underline {
+    border-bottom: 1px solid inherit;
+}
+
+/* Navbar otras */
+
 .navbar__link {
     color: $principal;
     font-weight: bold;
@@ -41,35 +74,55 @@
 
 .header2 {
     background-color: rgb(165, 183, 243);
+}
 
-    .navbar {
-        min-height: 10vh;
+.header1 {
+    background: rgba(243, 247, 248, 0.116);
+}
+
+header .navbar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    &__brand {
+        flex-basis: 30%
+    }
+
+    &__menu {
+        flex-basis: 40%;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1rem;
-
-        .navbar__brand {
-            flex-basis: 30%;
-
-            img {
-                height: auto;
-                width: auto;
-            }
-        }
-
-        .navbar__menu {
-            flex-basis: 40%;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0.5rem;
-            
-        }
+        gap: .5rem;
     }
+
+    &__brand img {
+        height: auto;
+        width: auto;
+    }
+}
+
+h1 {
+    font-family: $font-secundary;
+    text-align: center;
+    font-size: 20em;
+    color: $secondary;
+}
+
+.tittle__empresa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media screen and (max-width: 576px) {
 
     .navbar__item .navbar__link {
+        font-size: 90%;
+    }
+
+    .navbar__menu .navbar__item .navbar__link1 {
         font-size: 90%;
     }
 
