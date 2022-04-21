@@ -6,9 +6,9 @@ $font-primary: 'Titillium Web', sans-serif;
 $font-secundary: 'Merienda', cursive;
 
 $size: ( 
-    large: 3rem,
-    medium: 2rem,
-    small: 1rem
+    large: 2.8em,
+    medium: 2em,
+    small: 1em
 );
 @each $var, $val in $size {
     .size-#{$var} {

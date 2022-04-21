@@ -110,6 +110,13 @@ header .navbar {
     justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+    .navbar .navbar__menu .navbar__item:hover .submenu {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
 
     .navbar__item .navbar__link {

@@ -24,6 +24,7 @@ form {
             text-align: center;
             background-color: dodgerblue;
             border-radius: 8px;
+            font-family: $font-secundary;
         }
     }
 }
@@ -51,6 +52,8 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: $font-secundary;
+
 }
 
 .submit {
@@ -102,7 +105,8 @@ form {
 }
 
 .btn-outline-info {
-    font-family: $font-primary;
+    font-family: $font-secundary;
+    font-size: 1.8em;
 }
 
 .buttonboots {

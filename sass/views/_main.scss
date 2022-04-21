@@ -16,7 +16,7 @@ h1 {
     font-size: 20em;
     color: $secondary;
     word-spacing: -45px;
-    }
+}
 
 
 @keyframes movimiento {
@@ -35,13 +35,18 @@ main .aboutus {
     margin-bottom: 4rem;
     padding: 0 1rem;
     align-items: center;
+
     &__1 {
         flex-basis: 20%;
         font-weight: bold;
+        font-family: $font-secundary;
+        font-size: 1.6em;
     }
+
     &__2 {
         flex-basis: 80%;
     }
+
     &__tittle {
         font-size: 2em;
     }
@@ -74,7 +79,7 @@ main .aboutus {
         display: flex;
         flex-direction: column;
         font-size: 50%;
-            }
+    }
 
 
     .aboutus {
@@ -98,8 +103,9 @@ main .aboutus {
     .back {
         height: 100vh;
         background-repeat: no-repeat;
-        background-size: 400%;
-        animation: movimiento 15s infinite linear alternate;
+        background-size: 350%;
+        animation: none;
+        margin-bottom: -4rem;
     }
 }
 
@@ -108,7 +114,7 @@ main .aboutus {
         height: 100vh;
         background-repeat: no-repeat;
         background-size: 250%;
-        animation: movimiento 16s infinite linear alternate;
+        animation: none;
     }
 }
 
@@ -117,7 +123,7 @@ main .aboutus {
         height: 100vh;
         background-repeat: no-repeat;
         background-size: 180%;
-        animation: movimiento 14s infinite linear alternate;
+        animation: none;
     }
 }
 
@@ -126,7 +132,7 @@ main .aboutus {
         height: 100vh;
         background-repeat: no-repeat;
         background-size: 150%;
-        animation: movimiento 12s infinite linear alternate;
+        animation: movimiento 20s infinite linear alternate;
     }
 }
 
@@ -134,11 +140,11 @@ main .aboutus {
     animation: rotationLogo 5s ease infinite
 }
 
-@keyframes rotationLogo { 
-    100% { 
-        -webkit-transform: rotateY(360deg); 
-        transform:rotateY(360deg); 
-    } 
+@keyframes rotationLogo {
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
 }
 
 
@@ -161,8 +167,8 @@ main .aboutus {
 }
 
 .card-title {
+    font-family: $font-secundary;
     font-weight: bold;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
 }
-

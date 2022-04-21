@@ -15,13 +15,19 @@
 
 .Services__picture {
     flex-basis: 60%;
+    overflow: hidden;
+
+    &:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 
     .Svimg1 {
         max-width: 100%;
     }
 
     .Svimg2 {
-        max-width: 75%;
+        max-width: 100%;
     }
 }
 
@@ -31,20 +37,28 @@
     .sv__div {
         flex-basis: 40%;
         font-size: 2em;
-        @include flex(column, center)
-    }
-}
+        @include flex(column, center);
 
-h2 {
-    font-family: $font-secundary;
-    font-size: 3em;
-    text-align: center;
-    padding: 1rem;
+        .sv__tittle {
+            font-family: $font-secundary;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: $principal
+        }
+
+        .sv__text {
+            font-family: $font-primary;
+            color: $principal
+        }
+
+
+    }
 }
 
 .buggy {
     @extend .Services__div;
     margin-bottom: 2rem;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -53,17 +67,24 @@ h2 {
         flex-direction: column !important;
         max-width: 100%;
         padding: 0 5px;
+
     }
 
-}
+    .act__snorkel {
+        flex-direction: column-reverse !important;
+    }
+
+    .buggy__pic {align-content: center;}
+
+    .Svimg2 {align-self: flex-end;}
+  }
 
 /* Normalización Bootstrap Actividades */
 /*Button*/
 
 .btn-outline-secondary {
-    font-family: $font-primary;
-}
-
-.sv__text {
-    margin-bottom: 0;
+    font-family: $font-secundary;
+    color: $principal;
+    border-color: $principal;
+    font-size: 1em;
 }

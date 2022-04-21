@@ -16,13 +16,12 @@
 .section__serv {
     gap: 2rem;
     .title__sv {
-        font-size: map-get($size, medium);
+        font-size: map-get($size, large);
     }
     .information__sv {
         font-size: map-get($size, medium);
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .picture1__img {
@@ -59,10 +58,11 @@ h2 {
     padding: 1rem;
 }
 
-h4 {
-    font-family: $font-primary;
+.title__sv {
+    font-family: $font-secundary;
     color: $principal;
     font-weight: bold;
+    font-size: 3em;
 }
 
 .information__sv {

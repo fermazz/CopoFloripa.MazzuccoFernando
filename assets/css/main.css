@@ -4,13 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@400;700&display=swap");
 .size-large {
-  font-size: 3rem; }
+  font-size: 2.8em; }
 
 .size-medium {
-  font-size: 2rem; }
+  font-size: 2em; }
 
 .size-small {
-  font-size: 1rem; }
+  font-size: 1em; }
 
 /* Globals */
 /* Imports */
@@ -135,6 +135,10 @@ header .navbar {
   flex-direction: row;
   justify-content: center; }
 
+@media screen and (max-width: 992px) {
+  .navbar .navbar__menu .navbar__item:hover .submenu {
+    display: none; } }
+
 @media screen and (max-width: 576px) {
   .navbar__item .navbar__link {
     font-size: 90%; }
@@ -207,7 +211,9 @@ main .aboutus {
   align-items: center; }
   main .aboutus__1 {
     flex-basis: 20%;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Merienda", cursive;
+    font-size: 1.6em; }
   main .aboutus__2 {
     flex-basis: 80%; }
   main .aboutus__tittle {
@@ -245,29 +251,30 @@ main .aboutus {
   .back {
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: 400%;
-    animation: movimiento 15s infinite linear alternate; } }
+    background-size: 350%;
+    animation: none;
+    margin-bottom: -4rem; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .back {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 250%;
-    animation: movimiento 16s infinite linear alternate; } }
+    animation: none; } }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .back {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 180%;
-    animation: movimiento 14s infinite linear alternate; } }
+    animation: none; } }
 
 @media screen and (min-width: 993px) and (max-width: 1290px) {
   .back {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 150%;
-    animation: movimiento 12s infinite linear alternate; } }
+    animation: movimiento 20s infinite linear alternate; } }
 
 .navbar__brand .navbar__brand--img {
   animation: rotationLogo 5s ease infinite; }
@@ -293,9 +300,10 @@ main .aboutus {
   font-family: "Titillium Web", sans-serif; }
 
 .card-title {
+  font-family: "Merienda", cursive;
   font-weight: bold;
   text-align: center;
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 /*Estilos de Servicio*/
 .tittlesv {
@@ -306,14 +314,14 @@ main .aboutus {
   margin: 0 auto; }
   .picture1__img {
     max-width: 100%;
-    margin-bottom: 2rem; }
+    margin-bottom: 2em; }
 
 .section__serv {
   gap: 2rem; }
   .section__serv .title__sv {
-    font-size: 2rem; }
+    font-size: 2.8em; }
   .section__serv .information__sv {
-    font-size: 2rem; }
+    font-size: 2em; }
 
 @media screen and (max-width: 768px) {
   .picture1__img {
@@ -339,10 +347,11 @@ h2 {
   text-align: center;
   padding: 1rem; }
 
-h4 {
-  font-family: "Titillium Web", sans-serif;
+.title__sv {
+  font-family: "Merienda", cursive;
   color: #00204A;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 3em; }
 
 .information__sv {
   font-family: "Titillium Web", sans-serif;
@@ -361,11 +370,15 @@ h4 {
   flex-basis: 50%; }
 
 .Services__picture {
-  flex-basis: 60%; }
+  flex-basis: 60%;
+  overflow: hidden; }
+  .Services__picture:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   .Services__picture .Svimg1 {
     max-width: 100%; }
   .Services__picture .Svimg2 {
-    max-width: 75%; }
+    max-width: 100%; }
 
 .Services__div, .buggy {
   gap: 2rem; }
@@ -375,12 +388,14 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-
-h2 {
-  font-family: "Merienda", cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 1rem; }
+    .Services__div .sv__div .sv__tittle, .buggy .sv__div .sv__tittle {
+      font-family: "Merienda", cursive;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #00204A; }
+    .Services__div .sv__div .sv__text, .buggy .sv__div .sv__text {
+      font-family: "Titillium Web", sans-serif;
+      color: #00204A; }
 
 .buggy {
   margin-bottom: 2rem; }
@@ -390,15 +405,21 @@ h2 {
     display: flex !important;
     flex-direction: column !important;
     max-width: 100%;
-    padding: 0 5px; } }
+    padding: 0 5px; }
+  .act__snorkel {
+    flex-direction: column-reverse !important; }
+  .buggy__pic {
+    align-content: center; }
+  .Svimg2 {
+    align-self: flex-end; } }
 
 /* Normalización Bootstrap Actividades */
 /*Button*/
 .btn-outline-secondary {
-  font-family: "Titillium Web", sans-serif; }
-
-.sv__text {
-  margin-bottom: 0; }
+  font-family: "Merienda", cursive;
+  color: #00204A;
+  border-color: #00204A;
+  font-size: 1em; }
 
 /*Estilos de Galeria*/
 .container-galeria {
@@ -447,6 +468,12 @@ h2 {
   .item-galeria .video-galeria {
     align-items: flex-start; } }
 
+.zoom-efect {
+  overflow: hidden; }
+  .zoom-efect:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
 /* Normalización Bootstrap Galeria */
 /*Sombra*/
 .container__tittle {
@@ -477,7 +504,8 @@ form {
       padding: .8rem;
       text-align: center;
       background-color: dodgerblue;
-      border-radius: 8px; }
+      border-radius: 8px;
+      font-family: "Merienda", cursive; }
 
 .inputuser {
   background: none;
@@ -499,7 +527,8 @@ form {
 .button {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  font-family: "Merienda", cursive; }
 
 .submit {
   background-image: linear-gradient(to right, #005cc5, #5a14dc);
@@ -539,7 +568,8 @@ form {
     flex-direction: column !important; } }
 
 .btn-outline-info {
-  font-family: "Titillium Web", sans-serif; }
+  font-family: "Merienda", cursive;
+  font-size: 1.8em; }
 
 .buttonboots {
   display: flex;
