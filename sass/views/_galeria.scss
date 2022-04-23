@@ -6,13 +6,16 @@
     grid-auto-rows: 200px;
     padding: 2rem;
     grid-gap: 0.5rem;
+
     .item-galeria {
         position: relative;
+
         .img-galeria {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .tittle-galeria {
             position: absolute;
             background: rgba(0, 0, 0, 0.8);
@@ -70,7 +73,8 @@
     &:hover img {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-    }}
+    }
+}
 
 /* Normalización Bootstrap Galeria */
 /*Sombra*/
@@ -81,5 +85,3 @@
     margin: 1rem;
     align-items: flex-end;
 }
-
-

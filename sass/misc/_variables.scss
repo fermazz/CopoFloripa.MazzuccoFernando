@@ -2,17 +2,18 @@
 
 $principal: #00204A;
 $secondary: #fff;
-$font-primary: 'Titillium Web', sans-serif;
-$font-secundary: 'Merienda', cursive;
+$font-primary: 'Titillium Web',
+sans-serif;
+$font-secundary: 'Merienda',
+cursive;
 
-$size: ( 
-    large: 2.8em,
+$size: (large: 2.8em,
     medium: 2em,
-    small: 1em
-);
-@each $var, $val in $size {
+    small: 1em);
+
+@each $var,
+$val in $size {
     .size-#{$var} {
         font-size: #{$val};
+    }
 }
-}
-

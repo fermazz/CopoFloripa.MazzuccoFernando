@@ -16,8 +16,10 @@ form {
     padding: 1.5rem;
     border-radius: 15px;
     width: 30%;
+
     fieldset {
         border: 3px solid dodgerblue;
+
         legend {
             border: 1px solid dodgerblue;
             padding: .8rem;
@@ -65,6 +67,7 @@ form {
     cursor: pointer;
     border-radius: 5px;
     width: 25%;
+
     &:hover {
         background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
     }
@@ -113,4 +116,3 @@ form {
     display: flex;
     justify-content: end;
 }
-

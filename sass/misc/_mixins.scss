@@ -14,9 +14,14 @@
     margin: 0 auto
 }
 
-@mixin flex($direction, $justify,) {
+.containergrid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+@mixin flex($direction, $justify, ) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
-      
+
 }

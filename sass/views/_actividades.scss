@@ -74,10 +74,14 @@
         flex-direction: column-reverse !important;
     }
 
-    .buggy__pic {align-content: center;}
+    .buggy__pic {
+        align-content: center;
+    }
 
-    .Svimg2 {align-self: flex-end;}
-  }
+    .Svimg2 {
+        align-self: flex-end;
+    }
+}
 
 /* Normalización Bootstrap Actividades */
 /*Button*/

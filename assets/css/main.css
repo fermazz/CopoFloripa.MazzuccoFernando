@@ -53,6 +53,10 @@ img {
   max-width: 1080px;
   margin: 0 auto; }
 
+.containergrid {
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+
 /* Patials */
 /* ...Header & Navbar... */
 /* Navbar index */
@@ -63,6 +67,9 @@ img {
   .navbar__menu .navbar__item:hover {
     display: block;
     border-color: inherit; }
+
+.navbar__menu {
+  margin: 0 auto !important; }
 
 #borderwhit {
   color: #fff; }
@@ -124,8 +131,7 @@ header .navbar {
   header .navbar__menu {
     flex-basis: 40%;
     justify-content: space-between;
-    align-items: center;
-    gap: .5rem; }
+    align-items: center; }
   header .navbar__brand img {
     height: auto;
     width: auto; }
@@ -152,7 +158,8 @@ a:hover {
 
 /* Footer */
 footer {
-  background-color: #a5b7f3; }
+  background-color: #a5b7f3;
+  margin-top: auto !important; }
   footer .sectionfoo {
     min-height: 10vh;
     justify-content: space-between;
