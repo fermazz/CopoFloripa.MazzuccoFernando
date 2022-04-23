@@ -15,7 +15,7 @@
 }
 
 .navbar__menu {
-    margin: 0 auto !important
+    padding: 0 auto;
 }
 
 #borderwhit {
@@ -137,4 +137,8 @@ header .navbar {
 
 a:hover {
     color: inherit;
+}
+
+ol, ul {
+    padding-left: 0rem;
 }
