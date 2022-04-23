@@ -263,7 +263,9 @@ main .aboutus {
     background-repeat: no-repeat;
     background-size: 350%;
     animation: none;
-    margin-bottom: -4rem; } }
+    margin-bottom: -4rem; }
+  h1 {
+    margin: 0 1rem; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .back {
