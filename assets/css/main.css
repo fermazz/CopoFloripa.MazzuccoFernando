@@ -264,8 +264,10 @@ main .aboutus {
     background-size: 350%;
     animation: none;
     margin-bottom: -4rem; }
-  h1 {
-    margin: 0 1rem; } }
+  .tittle__empresa {
+    display: flex;
+    flex-direction: column;
+    font-size: 40%; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .back {
